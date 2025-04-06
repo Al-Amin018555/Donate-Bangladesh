@@ -48,13 +48,14 @@
 
     <!-- features button starts -->
     <div class="flex gap-3 justify-center mt-20">
-      <button class="btn btn-lg bg-[#B4F461] border-none rounded-lg">Donation</button>
-      <button class="btn btn-lg rounded-lg">History</button>
+      <button id="show-donation"
+        class="btn btn-lg bg-[#B4F461] border-none rounded-lg">Donation</button>
+      <button id="show-history" class="btn btn-lg rounded-lg">History</button>
     </div>
     <!-- features button ends -->
 
     <!-- donation carts starts -->
-    <div>
+    <div id="donation-carts">
       <!-- card-1 -->
       <div class="card lg:max-h-[420px] p-8 flex gap-8 lg:card-side bg-base-100 shadow-sm mt-8">
         <figure class="flex-1">
@@ -133,12 +134,21 @@
     </div>
     <!-- donation carts ends -->
 
+    <!-- history carts starts-->
+    <div class="hidden space-y-3 mt-14" id="history-carts">
+      
+    </div>
+    <!-- history carts ends-->
+
+
   </main>
   <footer class="mt-10 bg-[#F9F7F3] h-36">
 
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/features.js"></script>
+  <script src="js/utilities.js"></script>
 </body>
 
 </html>
