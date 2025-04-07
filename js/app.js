@@ -27,8 +27,8 @@ for (const donateBtn of allDonateBtn) {
             document.getElementById('account-balance').innerText = parseInt(accountBalance) - parseInt(donationAmount);
             event.target.parentNode.childNodes[1].childNodes[3].childNodes[0].innerText = updatedDonationBalance;
 
-            alert('Congratualtions You Have Donated Successfully!');
-            
+            alert('Congratulations You Have Donated Successfully!');
+
             const time = handleButtonClick()
         
             historyCard = document.getElementById('history-carts');
