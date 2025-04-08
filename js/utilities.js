@@ -8,6 +8,14 @@ function showSectionById(id) {
     document.getElementById('donation-carts').classList.add('hidden');
     document.getElementById('history-carts').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
+    if (id === 'history-carts') {
+        document.getElementById('show-history').classList.add('bg-[#B4F461]');
+        document.getElementById('show-donation').classList.remove('bg-[#B4F461]');      
+    }
+    else{
+        document.getElementById('show-donation').classList.add('bg-[#B4F461]'); 
+        document.getElementById('show-history').classList.remove('bg-[#B4F461]');  
+    }
 }
 
 function handleButtonClick() {
